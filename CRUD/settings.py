@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-&miz0qsj9qu$=88#7a_65&-w1!txns)0igeyfkkdue0um#qhqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-crud-production.up.railway.app', '127.0.0.1', 'localhost']
+
 
 
 # Application definition
@@ -118,11 +119,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static'),
 ]
+
 
 
 # Default primary key field type
